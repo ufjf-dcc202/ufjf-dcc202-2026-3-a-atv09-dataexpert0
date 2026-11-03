@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 03</title>
+    <link rel = "stylesheet" href = "estilo.css">
+    <style>
+      ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      ul > li {
+        border: 1px solid green;
+        background-color: lightgreen;
+      }
+
+      .desconstructed-pancake {
+        display: flex; 
+        flex-flow: column wrap;
+        justify-content: center;
+      }
+      .desconstructed-pancake > * {
+        flex: 1 0 120px;
+      }
+
+      .sidebar-say {
+        display: grid; 
+        grid-template-columns: minmax(8ch, 20%) 1fr;
+        gap: 10px;
+      }
+    </style>
+ </head>
+ <body>
+    <main>
+      <article class = "sidebar-say">
+        <section> 
+          <li>Lorem ipsum dolor sit.</li>
+          <li>Dignissimos natus velit possimus!</li>
+          <li>Molestiae libero quas dicta!</li>
+          <li>Pariatur a sequi at.</li>
+         </ul>
+        </section> 
+        <section>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+          Harum qui minima aliquid reiciendis quam deleniti. 
+          Odio voluptates, obcaecati fugit magni maxime est, q
+          uam praesentium alias eveniet enim quod doloribus cupiditate?
+        </section>
+      </article>
+    </main>
+ </body>
+ </html>
